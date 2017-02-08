@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Socket.IO chat</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="box">
+        <p>DMY聊天室</p>
+        <div class="fixed msg-wra">
+            <ul class="messages">
+               <li class="title">聊天消息</li>
+            </ul>
+            <ul class="system">
+               <li class="title">系统消息</li>
+               <li>欢迎进入weChat聊天室<!-- ,你的用户昵称是 <span id="nickname"></span> --></li>
+               <li>当前在线人数: <span id="lineNum">0</span></li>
+            </ul>
+        </div>
+        <form action="">
+            <input id="m" autocomplete="off" placeholder="请在此输入消息..." />
+            <button>Send</button>
+        </form>
+    </div>
+
+    <div class="glas">
+        <div class="gla-wra">
+            <p>Go get youself a nickname</p>
+            <input type="text" id="loginName" placeholder="input your nickname">
+            <button>login</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+.fixed:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.fixed{zoom:1;}
+    .box{
+        width: 800px;
+        margin: 20px auto;
+    }
+    body {
+        font: 13px Helvetica, Arial;
+    }
+    li{
+        list-style: none;
+    }
+    .box form{
+        margin-top: 15px;
+    }
+    .box p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .box form button{
+        width: 100px;
+        height: 30px;
+        background-color: #336699;
+        border: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .box form input{
+        width: 695px;
+        height: 30px;
+        padding: 4px;
+        border: 1px solid #336699;
+    }
+
+    .msg-wra{
+        border: 1px solid #336699;
+        border-radius: 4px;
+    }
+    .glas {
+        background-color: rgba(130, 130, 130, 0.5);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .gla-wra {
+        width: 300px;
+        margin: 200px auto;
+    }
+    
+    .gla-wra p {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .gla-wra input {
+        border-radius: 4px;
+        width: 300px;
+        height: 30px;
+    }
+    
+    .gla-wra button {
+        display: block;
+        border: none;
+        background-color: #5CB85C;
+        font-size: 18px;
+        padding: 5px 10px;
+        margin: 5px auto
+    }
+
+    .messages{
+        float: left;
+        width: 500px;
+        border-right: 1px solid #336699;
+        height: 400px;
+        overflow-y: auto;
+    }
+
+    .system{
+        float: left;
+        height: 400px;
+        width: 298px;
+        overflow-y: auto;
+    }
+
+    .title{
+        font-size: 16px;
+        text-align: center;
+        font-family: "微软雅黑";
+        padding:2px;
+        background-color: #336699;
+        color: #fff;
+    }
+
+    .messages li:not(:first-child){
+        margin: 5px;
+        padding: 5px;
+        background-color: #99CCCC;
+        border-radius: 4px;
+    }
